@@ -20,7 +20,6 @@ import psutil
 import instaloader
 import pyautogui
 import PyPDF2
-from Recordings import Record_Option
 from PIL import ImageGrab
 import pyaudio
 import wave
