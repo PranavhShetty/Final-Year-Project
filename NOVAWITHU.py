@@ -34,7 +34,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUiType
-from JarvisUi import Ui_JarvisUI
+from NOVAUi import Ui_NOVAUI
 from state import state
 from pywikihow import search_wikihow
 import speedtest
@@ -75,7 +75,7 @@ class MainThread(QThread):
         except:
             return 'None'
         
-    #Jarvis commands controller 
+    #NOVA commands controller 
     def run_jarvis(self):
         self.wish()
         self.talk('Hello boss I am NOVA  your next Gen optimistic virtual assistant. please tell me how can i help you')
@@ -174,7 +174,7 @@ class MainThread(QThread):
             elif ('take screenshot' in self.command)or ('screenshot' in self.command) or("take a screenshot" in self.command):
                 self.scshot()
             #Command for reading PDF
-            #EG: Jarvis read pdf
+            #EG: NOVA read pdf
             elif ("read pdf" in self.command) or ("pdf" in self.command):
                 self.pdf_reader()
             #command for searching for a procedure how to do something
@@ -198,7 +198,7 @@ class MainThread(QThread):
                 pyautogui.press("volumemute")
                 self.talk('volume muted')
             #command for opening your mobile camera the description for using this is in the README file
-            #Eg: Jarvis open mobile camera
+            #Eg: NOVA open mobile camera
             elif ("open mobile cam" in self.command):
                 self.Mobilecamra()
             #command for opening your webcamera
@@ -221,7 +221,7 @@ class MainThread(QThread):
                 s = self.take_Command()
                 self.Covid(s)
             #Command for screenRecording
-            #Eg: Jarvis start Screen recording
+            #Eg: NOVA start Screen recording
             elif ("recording" in self.command) or ("screen recording" in self.command) or ("voice recording" in self.command):
                 try:
                     self.talk("Boss press q key to stop recordings")
@@ -243,7 +243,7 @@ class MainThread(QThread):
                 except:
                     self.talk("Boss an unexpected error occured couldn't track the mobile number")
             #command for playing a dowloaded mp3 song in which is present in your system
-            #Eg: Jarvis play music
+            #Eg: NOVA play music
             elif 'music' in self.command:
                 try:
                     music_dir = 'E:\\music' #change the song path directory if you have songs in other directory
@@ -1086,7 +1086,7 @@ class Main(QMainWindow):
     def __init__(self,path):
         self.cpath = path
         super().__init__()
-        self.ui = Ui_JarvisUI(path=current_path)
+        self.ui = Ui_NOVAUI(path=current_path)
         self.ui.setupUi(self)
         self.ui.pushButton_4.clicked.connect(self.startTask)
         self.ui.pushButton_3.clicked.connect(self.close)

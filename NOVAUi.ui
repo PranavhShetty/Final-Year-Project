@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>JarvisUI</class>
- <widget class="QMainWindow" name="JarvisUI">
+ <class>NOVAUI</class>
+ <widget class="QMainWindow" name="NOVAUI">
   <property name="geometry">
    <rect>
     <x>0</x>

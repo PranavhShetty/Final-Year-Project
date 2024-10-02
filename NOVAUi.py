@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'JarvisUi.ui'
+# Form implementation generated from reading ui file 'NOVAUi.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -11,12 +11,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_JarvisUI(object):
+class Ui_NOVAUI(object):
     cpath =""
-    def setupUi(self, JarvisUI):
-        JarvisUI.setObjectName("JarvisUI")
-        JarvisUI.resize(2000, 1000)
-        self.centralwidget = QtWidgets.QWidget(JarvisUI)
+    def setupUi(self, NOVAUI):
+        NOVAUI.setObjectName("NOVAUI")
+        NOVAUI.resize(2000, 1000)
+        self.centralwidget = QtWidgets.QWidget(NOVAUI)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(-80, -50, 1981, 1091))
@@ -173,18 +173,18 @@ class Ui_JarvisUI(object):
         #self.label_5.raise_()
         # 
         # self.label_17.raise_()
-        JarvisUI.setCentralWidget(self.centralwidget)
+        NOVAUI.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(JarvisUI)
-        QtCore.QMetaObject.connectSlotsByName(JarvisUI)
+        self.retranslateUi(NOVAUI)
+        QtCore.QMetaObject.connectSlotsByName(NOVAUI)
 
-    def retranslateUi(self, JarvisUI):
+    def retranslateUi(self, NOVAUI):
         _translate = QtCore.QCoreApplication.translate
-        JarvisUI.setWindowTitle(_translate("JarvisUI", "MainWindow"))
-        self.pushButton_3.setText(_translate("JarvisUI", "EXIT"))
-        self.pushButton_4.setText(_translate("JarvisUI", "RUN"))
-        self.label_14.setText(_translate("JarvisUI", "    DATE"))
-        self.label_15.setText(_translate("JarvisUI", "      TIME"))
+        NOVAUI.setWindowTitle(_translate("NOVAUI", "MainWindow"))
+        self.pushButton_3.setText(_translate("NOVAUI", "EXIT"))
+        self.pushButton_4.setText(_translate("NOVAUI", "RUN"))
+        self.label_14.setText(_translate("NOVAUI", "    DATE"))
+        self.label_15.setText(_translate("NOVAUI", "      TIME"))
     
     def __init__(self, path):
         self.cpath = path
@@ -196,8 +196,8 @@ if __name__ == "__main__":
     
     current_path = os.getcwd()
     app = QtWidgets.QApplication(sys.argv)
-    JarvisUI = QtWidgets.QMainWindow()
-    ui = Ui_JarvisUI(path=current_path)
-    ui.setupUi(JarvisUI)
-    JarvisUI.show()
+    NOVAUI = QtWidgets.QMainWindow()
+    ui = Ui_NOVAUI(path=current_path)
+    ui.setupUi(NOVAUI)
+    NOVAUI.show()
     sys.exit(app.exec_())
